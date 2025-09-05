@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+    <title>🐸 DEGEN MEME FACTORY 🐸 | Bitcoin Pepe</title>
+    <meta name="description" content="Submit and vote on Bitcoin Pepe memes - Diamond hands only!" />
+    <meta name="og:type" content="website" />
+    <meta name="og:site_name" content="Bitcoin Pepe Meme Factory" />
+    <meta name="og:title" content="🐸 DEGEN MEME FACTORY 🐸" />
+    <meta name="og:description" content="Submit and vote on Bitcoin Pepe memes - Diamond hands only!" />
+    <meta name="og:image" content="./img/0aca6b9f-8ed8-4f27-9173-463e1c0200c4-1.png" />
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="🐸 DEGEN MEME FACTORY 🐸" />
+    <meta name="twitter:description" content="Submit and vote on Bitcoin Pepe memes - Diamond hands only!" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Bitcoin Pepe Memes" />
+    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="css/liquid-glass.css" />
+    <link rel="stylesheet" type="text/css" href="css/degen-chaos.css" />
+    <script src="js/degen-chaos.js" defer></script>
+    <script src="js/wallet-connector.js" defer></script>
+    <script src="js/meme-factory.js" defer></script>
+  </head>
+  <body>
+    <!-- Liquid Glass Navigation -->
+    <nav class="main-nav">
+      <div class="nav-glass">
+        <div class="nav-container">
+          <a href="current-site.html" class="nav-logo">
+            <img src="img/vector@2x.png" alt="Bitcoin Pepe Logo" />
+            <span>Bitcoin Pepe</span>
+          </a>
+          <div class="nav-links">
+            <a href="current-site.html">Home</a>
+            <a href="#memes" class="active">Memes</a>
+            <a href="timeline.html">Timeline</a>
+            <a href="current-site.html#nfts">NFTs</a>
+            <a href="current-site.html#trade">Trade</a>
+            <a href="https://t.me/PepeCoinBTC" target="_blank">Telegram</a>
+            <a href="https://discord.gg/JcHFdKBK2M" target="_blank">Discord</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="current-site">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-glass">
+            <div class="hero-content" style="text-align: center;">
+              <h1 class="degen-title" data-text="Bitcoin Pepe Meme Gallery">Bitcoin Pepe Meme Gallery</h1>
+              <p style="color: var(--text-medium); font-weight: 600; margin-bottom: 30px; font-size: 18px;">
+                🚀 Submit your Bitcoin Pepe memes 🚀<br/>
+                Token & NFT holders can vote • Community curated content<br/>
+                <span style="color: var(--primary-orange); font-weight: 700;">Share your creativity with the Bitcoin Pepe community!</span>
+              </p>
+              
+              <!-- Wallet Connection -->
+              <div id="wallet-status" class="wallet-status">
+                <button id="connect-wallet" class="btn-degen">
+                  🔌 Connect Stacks Wallet
+                </button>
+                <div id="wallet-info" class="wallet-info" style="display: none;">
+                  <div class="degen-badge diamond">💎 CONNECTED</div>
+                  <p id="wallet-address" style="color: var(--text-primary); font-weight: 700;"></p>
+                  <p id="holder-status" style="color: var(--primary-orange); font-weight: 700;"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meme Submission Section -->
+      <section id="submit" class="section-glass">
+        <div class="section-container">
+          <div class="section-header section-header-degen">
+            <h2>Submit Your Meme</h2>
+            <p style="color: var(--text-medium); font-size: 16px;">Token & NFT holders only • Community curated content</p>
+          </div>
+          
+          <div class="meme-submission-form">
+            <div class="card-glass degen-tooltip" data-meme="SUBMIT FIRE MEMES! 🔥" style="max-width: 600px; margin: 0 auto; padding: 40px;">
+              <form id="meme-form">
+                <div class="form-group">
+                  <label for="meme-title" style="color: var(--primary-orange); font-weight: 700; margin-bottom: 8px; display: block;">🔥 MEME TITLE</label>
+                  <input type="text" id="meme-title" placeholder="Give your meme a legendary title..." style="width: 100%; padding: 12px; border: 2px solid var(--primary-orange); border-radius: 8px; background: rgba(0,0,0,0.8); color: var(--text-primary); font-weight: 600;" maxlength="100" required />
+                </div>
+                
+                <div class="form-group" style="margin-top: 20px;">
+                  <label for="meme-file" style="color: var(--primary-orange); font-weight: 700; margin-bottom: 8px; display: block;">🖼️ UPLOAD MEME</label>
+                  <div class="file-upload-area" id="file-upload" style="border: 2px dashed var(--primary-orange); border-radius: 12px; padding: 40px; text-align: center; cursor: pointer; transition: all 0.3s ease;">
+                    <div class="upload-icon" style="font-size: 48px; margin-bottom: 16px;">📁</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 8px;">Drag & drop your dank meme here or click to browse</p>
+                    <p style="color: var(--text-tertiary); font-size: 12px;">PNG, JPG, GIF, WEBP (Max 10MB)</p>
+                    <input type="file" id="meme-file" accept="image/*" style="display: none;" required />
+                  </div>
+                  <div id="file-preview" style="margin-top: 20px; display: none;">
+                    <img id="preview-image" style="max-width: 100%; max-height: 300px; border-radius: 12px; border: 2px solid var(--primary-orange);" />
+                  </div>
+                </div>
+                
+                <div class="form-group" style="margin-top: 20px;">
+                  <label for="meme-description" style="color: var(--primary-orange); font-weight: 700; margin-bottom: 8px; display: block;">💬 MEME DESCRIPTION (Optional)</label>
+                  <textarea id="meme-description" placeholder="Tell us why this meme is absolutely BASED..." style="width: 100%; padding: 12px; border: 2px solid var(--primary-orange); border-radius: 8px; background: rgba(0,0,0,0.8); color: var(--text-primary); font-weight: 600; min-height: 80px; resize: vertical;" maxlength="500"></textarea>
+                </div>
+                
+                <div class="form-group" style="margin-top: 30px; text-align: center;">
+                  <button type="submit" id="submit-meme" class="btn-degen sound-trigger" data-meme="MEME SUBMITTED! 🚀" disabled>
+                    🚀 SUBMIT DANK MEME 🚀
+                  </button>
+                  <p style="color: var(--text-tertiary); font-size: 12px; margin-top: 12px;">
+                    ⚠️ Connect wallet and verify ownership to submit memes
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meme Gallery Section -->
+      <section id="memes" class="section-glass">
+        <div class="section-container">
+          <div class="section-header section-header-degen">
+            <h2>Community Meme Gallery</h2>
+            <p style="color: var(--text-medium); font-size: 16px;">The best Bitcoin Pepe memes • Vote for your favorites</p>
+          </div>
+          
+          <!-- Meme Filters -->
+          <div class="meme-filters" style="text-align: center; margin-bottom: 40px;">
+            <button class="filter-btn active" data-filter="hot">🔥 HOT</button>
+            <button class="filter-btn" data-filter="new">⚡ NEW</button>
+            <button class="filter-btn" data-filter="top">🏆 TOP</button>
+            <button class="filter-btn" data-filter="legendary">💎 LEGENDARY</button>
+          </div>
+          
+          <!-- Meme Grid -->
+          <div id="meme-gallery" class="meme-gallery">
+            <!-- Memes will be loaded here -->
+            <div class="meme-loading">
+              <div class="degen-loading"></div>
+              <p style="color: var(--primary-orange); font-weight: 700; margin-top: 16px;">LOADING DANK MEMES...</p>
+            </div>
+          </div>
+          
+          <!-- Load More Button -->
+          <div style="text-align: center; margin-top: 40px;">
+            <button id="load-more" class="btn-degen sound-trigger" data-meme="MORE MEMES! 🐸">
+              🐸 LOAD MORE MEMES 🐸
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Meme Stats Section -->
+      <section class="section-glass">
+        <div class="section-container">
+          <div class="section-header section-header-degen">
+            <h2>Community Statistics</h2>
+            <p style="color: var(--text-medium); font-size: 16px;">Meme submission and voting metrics</p>
+          </div>
+          
+          <div class="grid-4" id="meme-stats">
+            <div class="card-glass degen-tooltip" data-meme="SO MANY MEMES! 🐸" style="text-align: center;">
+              <div class="degen-badge rare" style="margin-bottom: 16px;">📊 TOTAL MEMES</div>
+              <div class="stat-number" id="total-memes">420</div>
+              <div class="stat-label">Submitted</div>
+            </div>
+            <div class="card-glass degen-tooltip" data-meme="DIAMOND HANDS VOTING! 💎" style="text-align: center;">
+              <div class="degen-badge diamond" style="margin-bottom: 16px;">🗳️ TOTAL VOTES</div>
+              <div class="stat-number" id="total-votes">6969</div>
+              <div class="stat-label">Cast</div>
+            </div>
+            <div class="card-glass degen-tooltip" data-meme="ACTIVE DEGENS! 🦍" style="text-align: center;">
+              <div class="degen-badge moon" style="margin-bottom: 16px;">🦍 ACTIVE VOTERS</div>
+              <div class="stat-number" id="active-voters">1337</div>
+              <div class="stat-label">This Week</div>
+            </div>
+            <div class="card-glass degen-tooltip" data-meme="LEGENDARY MEMES! 🏆" style="text-align: center;">
+              <div class="degen-badge legendary" style="margin-bottom: 16px;">🏆 LEGENDARY</div>
+              <div class="stat-number" id="legendary-memes">69</div>
+              <div class="stat-label">Hall of Fame</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="background: var(--surface-primary); backdrop-filter: var(--blur-xl); border-top: 1px solid var(--glass-white); padding: 60px 0 30px; margin-top: 80px;">
+        <div class="section-container">
+          <div class="grid-3" style="margin-bottom: 40px;">
+            <div>
+              <h3 style="color: var(--text-accent); margin-bottom: 20px;">🐸 Bitcoin Pepe</h3>
+              <p style="color: var(--text-secondary); margin-bottom: 20px;">The first Pepe on Bitcoin Layer 2</p>
+              <div style="display: flex; gap: 16px;">
+                <a href="https://twitter.com/PepeCoinSTX" target="_blank" style="color: var(--text-tertiary);">Twitter</a>
+                <a href="https://t.me/PepeCoinBTC" target="_blank" style="color: var(--text-tertiary);">Telegram</a>
+                <a href="https://discord.gg/JcHFdKBK2M" target="_blank" style="color: var(--text-tertiary);">Discord</a>
+              </div>
+            </div>
+            <div>
+              <h3 style="color: var(--text-accent); margin-bottom: 20px;">🚀 Quick Links</h3>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <a href="current-site.html" style="color: var(--text-tertiary);">Home</a>
+                <a href="timeline.html" style="color: var(--text-tertiary);">Timeline</a>
+                <a href="current-site.html#nfts" style="color: var(--text-tertiary);">NFTs</a>
+                <a href="current-site.html#trade" style="color: var(--text-tertiary);">Trade</a>
+              </div>
+            </div>
+            <div>
+              <h3 style="color: var(--text-accent); margin-bottom: 20px;">💎 Community</h3>
+              <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 8px;">Weekly Spaces on X</p>
+              <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 8px;">Thursdays at 8am PST</p>
+              <p style="color: var(--text-secondary); font-size: 14px;">Diamond hands only!</p>
+            </div>
+          </div>
+          <div style="border-top: 1px solid var(--glass-white); padding-top: 30px; text-align: center;">
+            <p style="color: var(--text-tertiary); margin-bottom: 8px;">&copy; 2024 Bitcoin Pepe Community. Built on Stacks.</p>
+            <p style="color: var(--text-tertiary); font-size: 12px; opacity: 0.7;">This is a meme coin. DYOR. Diamond hands only! 💎🙌</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

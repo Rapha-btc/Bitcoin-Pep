@@ -1,0 +1,1615 @@
+/* Clean Bitcoin Pepe Design - Orange & White Focus */
+/* Professional styling with subtle accent colors */
+
+/* Clean Orange & White Palette */
+:root {
+  /* Primary Colors */
+  --primary-orange: #ff6600;
+  --light-orange: #ff8533;
+  --dark-orange: #e55a00;
+  --primary-white: #ffffff;
+  --clean-gray: #f8f9fa;
+  --light-gray: #e9ecef;
+  --text-dark: #2c3e50;
+  --text-medium: #495057;
+  --text-light: #6c757d;
+  
+  /* Orange Gradients */
+  --orange-gradient: linear-gradient(135deg, #ff6600, #ff8533);
+  --subtle-gradient: linear-gradient(135deg, #ffffff, #f8f9fa);
+  --dark-gradient: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+/* Subtle Animations */
+@keyframes gentle-glow {
+  0%, 100% { 
+    box-shadow: 0 2px 8px rgba(255, 102, 0, 0.2);
+  }
+  50% { 
+    box-shadow: 0 4px 16px rgba(255, 102, 0, 0.3);
+  }
+}
+
+@keyframes subtle-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Enhanced Music Section Styles */
+.music-section-enhanced {
+  background: linear-gradient(180deg, 
+    rgba(248, 249, 250, 0.95) 0%, 
+    rgba(233, 236, 239, 0.9) 15%,
+    rgba(44, 62, 80, 0.85) 40%,
+    rgba(52, 73, 94, 0.9) 60%,
+    rgba(44, 62, 80, 0.95) 100%
+  );
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 120px 0;
+  margin-top: -20px;
+}
+
+.music-section-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(255, 102, 0, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255, 133, 51, 0.12) 0%, transparent 40%),
+    linear-gradient(45deg, rgba(255, 102, 0, 0.05) 0%, transparent 30%, rgba(255, 102, 0, 0.03) 70%, transparent 100%);
+  pointer-events: none;
+}
+
+.music-section-enhanced::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(248, 249, 250, 1) 0%, rgba(248, 249, 250, 0.8) 30%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.music-header {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 102, 0, 0.2);
+  margin: 0 auto 60px;
+  max-width: 800px;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.music-header h2 {
+  animation: gentle-glow 3s ease-in-out infinite;
+  background: linear-gradient(45deg, var(--primary-orange), var(--light-orange), var(--primary-orange));
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite, gentle-glow 3s ease-in-out infinite;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.music-header p {
+  color: var(--primary-orange);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 102, 0, 0.1);
+  padding: 12px 24px;
+  border-radius: 25px;
+  display: inline-block;
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.music-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Featured Track Styling */
+.featured-track {
+  background: linear-gradient(135deg, 
+    rgba(255, 102, 0, 0.15) 0%, 
+    rgba(255, 133, 51, 0.1) 50%, 
+    rgba(255, 102, 0, 0.05) 100%
+  );
+  border: 2px solid var(--primary-orange);
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-track::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 40%, rgba(255, 102, 0, 0.05) 50%, transparent 60%);
+  animation: shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.featured-track:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(255, 102, 0, 0.3);
+  border-color: var(--light-orange);
+}
+
+.album-art-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 24px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.album-art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.album-art-container:hover .play-overlay {
+  opacity: 1;
+}
+
+.album-art-container:hover .album-art {
+  transform: scale(1.05);
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.4);
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.6);
+}
+
+.audio-visualizer {
+  display: flex;
+  gap: 3px;
+  align-items: end;
+  height: 30px;
+}
+
+.audio-visualizer .bar {
+  width: 4px;
+  background: var(--primary-orange);
+  border-radius: 2px;
+  animation: visualizer-dance 1.5s ease-in-out infinite;
+}
+
+.audio-visualizer .bar:nth-child(1) { animation-delay: 0s; height: 20px; }
+.audio-visualizer .bar:nth-child(2) { animation-delay: 0.1s; height: 25px; }
+.audio-visualizer .bar:nth-child(3) { animation-delay: 0.2s; height: 30px; }
+.audio-visualizer .bar:nth-child(4) { animation-delay: 0.3s; height: 15px; }
+.audio-visualizer .bar:nth-child(5) { animation-delay: 0.4s; height: 22px; }
+
+@keyframes visualizer-dance {
+  0%, 100% { transform: scaleY(0.3); opacity: 0.7; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+.track-info {
+  text-align: center;
+}
+
+.track-info h3 {
+  font-family: Impact, sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin: 16px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.track-subtitle {
+  color: var(--light-orange);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.track-stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.track-stats span {
+  background: rgba(255, 102, 0, 0.15);
+  border: 1px solid var(--primary-orange);
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+
+.btn-music-primary, .btn-music-secondary {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-music-primary {
+  background: linear-gradient(45deg, var(--primary-orange), var(--light-orange));
+  color: #000;
+  border: 2px solid var(--primary-orange);
+  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
+}
+
+.btn-music-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(45deg, var(--light-orange), var(--primary-orange));
+}
+
+.btn-music-secondary {
+  background: rgba(255, 102, 0, 0.1);
+  color: var(--primary-orange);
+  border: 2px solid var(--primary-orange);
+}
+
+.btn-music-secondary:hover {
+  background: var(--primary-orange);
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.3);
+}
+
+/* Music Collection Styling */
+.music-collection {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.collection-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collection-header h3 {
+  font-family: Impact, sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.collection-header p {
+  color: var(--text-medium);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.music-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.music-feature {
+  text-align: center;
+  padding: 24px 16px;
+  background: rgba(255, 102, 0, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 102, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.music-feature:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-orange);
+  background: rgba(255, 102, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 0 10px rgba(255, 102, 0, 0.3));
+}
+
+.music-feature h4 {
+  color: var(--primary-orange);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.music-feature p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.collection-actions {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .music-showcase {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .album-art-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .music-features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+  }
+  
+  .featured-track, .music-collection {
+    padding: 24px;
+  }
+}
+
+/* Token Stats Grid */
+.token-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 102, 0, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.stat-card:hover::before {
+  left: 100%;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.2);
+  border-color: var(--primary-orange);
+}
+
+.stat-icon {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(255, 102, 0, 0.3));
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1) rotateY(360deg);
+  filter: drop-shadow(0 0 15px rgba(255, 102, 0, 0.5));
+}
+
+@media (max-width: 768px) {
+  .token-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .stat-card {
+    padding: 20px 16px !important;
+  }
+  
+  .stat-icon {
+    font-size: 2rem !important;
+  }
+}
+
+/* Enhanced Trading Widget Styles */
+.trading-widget-enhanced {
+  border: 2px solid var(--primary-orange) !important;
+  box-shadow: 
+    0 20px 60px rgba(255, 102, 0, 0.2),
+    0 0 0 1px rgba(255, 102, 0, 0.1) !important;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(248, 249, 250, 0.9) 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.trading-widget-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 102, 0, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 133, 51, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.trading-widget-enhanced iframe {
+  position: relative;
+  z-index: 2;
+  border-radius: 0 0 20px 20px;
+  transition: all 0.3s ease;
+}
+
+.trading-widget-enhanced:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 25px 80px rgba(255, 102, 0, 0.25),
+    0 0 0 2px rgba(255, 102, 0, 0.2);
+}
+
+/* Make the widget even more prominent on larger screens */
+@media (min-width: 1200px) {
+  .trading-widget-enhanced {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .trading-widget-enhanced iframe {
+    height: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trading-widget-enhanced iframe {
+    height: 600px;
+  }
+}
+
+/* Modern Typography System */
+:root {
+  /* Font Families */
+  --font-primary: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Base Typography */
+body {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Headings - Space Grotesk for impact */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+/* Navigation */
+.nav-links a {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.nav-logo span {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Buttons */
+.btn-degen, .btn-glass, .btn-music-primary, .btn-music-secondary {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+/* Special Elements */
+.degen-title {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--text-dark);
+  position: relative;
+  letter-spacing: -0.03em;
+}
+
+/* Stats and Numbers - Mono for precision */
+.stat-number, .nft-rarity-degen, .track-stats span {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+/* Music Section Headers */
+.music-header h2 {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.track-info h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Trading Widget */
+.trading-widget-enhanced h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* NFT Cards */
+.nft-title-degen {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Badges */
+.degen-badge {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* Body Text Improvements */
+p {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+}
+
+/* Enhanced Readability */
+.section-header p {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Timeline Text */
+.timeline-content h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.timeline-content p {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* Modern Link Styling */
+a {
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+/* Collection Headers */
+.collection-header h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.music-feature h4 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Enhanced About Section Styles */
+.enhanced-header {
+  position: relative;
+  padding: 40px 0 60px 0;
+}
+
+.header-badge {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.badge-text {
+  background: linear-gradient(45deg, var(--primary-orange), var(--light-orange));
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.creator-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.creator-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.creator-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.creator-details h4 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 4px 0;
+  font-size: 1.1rem;
+}
+
+.creator-details p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tech-badge {
+  background: rgba(255, 102, 0, 0.1);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  color: var(--primary-orange);
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: rgba(255, 102, 0, 0.2);
+  border-color: var(--primary-orange);
+  transform: translateY(-2px);
+}
+
+/* Enhanced Token Stats */
+.enhanced-token-stats {
+  margin: 60px 0;
+}
+
+.stats-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stats-header h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary-orange);
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.stats-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.token-stats-enhanced-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.stat-card-enhanced {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: 1px solid rgba(255, 102, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card-enhanced::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 102, 0, 0.08), transparent);
+  transition: left 0.6s ease;
+}
+
+.stat-card-enhanced:hover::before {
+  left: 100%;
+}
+
+.stat-card-enhanced:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(255, 102, 0, 0.25);
+  border-color: var(--primary-orange);
+}
+
+.stat-icon-large {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 12px rgba(255, 102, 0, 0.4));
+  transition: all 0.3s ease;
+}
+
+.stat-card-enhanced:hover .stat-icon-large {
+  transform: scale(1.1) rotateY(360deg);
+  filter: drop-shadow(0 0 20px rgba(255, 102, 0, 0.6));
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-content .stat-number {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--primary-orange);
+  margin: 0 0 4px 0;
+  line-height: 1;
+}
+
+.stat-content .stat-label {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin: 0 0 6px 0;
+}
+
+.stat-sublabel {
+  font-family: var(--font-secondary);
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+/* Contract Information */
+.contract-info {
+  margin-top: 40px;
+  padding: 30px;
+  border: 2px solid rgba(255, 102, 0, 0.2);
+}
+
+.contract-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contract-header h4 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary-orange);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.contract-details {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.contract-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 102, 0, 0.1);
+}
+
+.contract-label {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.contract-value {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  word-break: break-all;
+  text-align: right;
+  max-width: 60%;
+}
+
+.contract-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-contract {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(45deg, var(--primary-orange), var(--light-orange));
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-contract:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(45deg, var(--light-orange), var(--primary-orange));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .creator-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .tech-stack {
+    justify-content: center;
+  }
+  
+  .token-stats-enhanced-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .stat-card-enhanced {
+    padding: 20px;
+  }
+  
+  .stat-icon-large {
+    font-size: 2.5rem;
+  }
+  
+  .stat-content .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .contract-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .contract-value {
+    text-align: left;
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+  
+  .contract-actions {
+    flex-direction: column;
+  }
+}
+
+/* Enhanced Merch Section Styles */
+.merch-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.featured-merch {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  padding: 40px;
+  border: 2px solid rgba(255, 102, 0, 0.2);
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.05), rgba(255, 133, 51, 0.03));
+}
+
+.merch-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merch-placeholder-custom {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--light-orange));
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.merch-placeholder-custom:hover {
+  transform: scale(1.05);
+}
+
+.merch-icon {
+  font-size: 4rem;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.custom-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.merch-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.merch-info h3 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.merch-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.merch-requirements {
+  margin: 16px 0;
+}
+
+.requirement-badge {
+  background: rgba(255, 102, 0, 0.15);
+  border: 1px solid var(--primary-orange);
+  color: var(--primary-orange);
+  padding: 10px 16px;
+  border-radius: 15px;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.merch-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.merch-features span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Merch Grid */
+.merch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.merch-card {
+  padding: 24px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 102, 0, 0.1);
+}
+
+.merch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 102, 0, 0.2);
+  border-color: var(--primary-orange);
+}
+
+.merch-placeholder-socks {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.merch-placeholder-socks.checkmate {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+.merch-placeholder-socks.maxbidding {
+  background: linear-gradient(135deg, var(--primary-orange), var(--light-orange));
+}
+
+.merch-placeholder-nft {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, rgba(255, 102, 0, 0.1), rgba(255, 133, 51, 0.05));
+  border: 2px solid rgba(255, 102, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 20px;
+}
+
+.pattern-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.nft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+
+.mini-nft {
+  width: 30px;
+  height: 30px;
+  background: var(--primary-orange);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.merch-card-content h4 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+}
+
+.merch-card-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.merch-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.holder-price, .regular-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-label {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.price-value {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--primary-orange);
+  font-size: 0.9rem;
+}
+
+.requirement-small {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  text-align: center;
+  padding: 6px 12px;
+  background: rgba(255, 102, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.nft-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.nft-benefits span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.btn-nft, .btn-merch-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(45deg, var(--primary-orange), var(--light-orange));
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+  margin-top: auto;
+}
+
+.btn-nft:hover, .btn-merch-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 102, 0, 0.4);
+  background: linear-gradient(45deg, var(--light-orange), var(--primary-orange));
+}
+
+.merch-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-merch-primary {
+  font-size: 1.1rem;
+  padding: 16px 32px;
+  margin-bottom: 24px;
+}
+
+.merch-note {
+  background: rgba(255, 102, 0, 0.05);
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.merch-note p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-merch {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+  
+  .merch-placeholder-custom {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .merch-icon {
+    font-size: 3rem;
+  }
+  
+  .merch-info h3 {
+    font-size: 1.6rem;
+  }
+  
+  .merch-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .merch-placeholder-socks, .merch-placeholder-nft {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .merch-features {
+    justify-content: center;
+  }
+}
+
+.degen-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: var(--orange-gradient);
+  border-radius: 2px;
+}
+
+/* Clean Buttons */
+.btn-degen {
+  background: var(--orange-gradient);
+  border: 2px solid var(--primary-orange);
+  color: var(--primary-white);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-degen:hover {
+  background: var(--primary-white);
+  color: var(--primary-orange);
+  transform: translateY(-2px);
+  animation: gentle-glow 2s infinite;
+}
+
+.btn-degen:active {
+  transform: translateY(0);
+}
+
+/* Clean Badges */
+.degen-badge {
+  background: var(--clean-gray);
+  color: var(--text-dark);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin: 4px;
+  border: 1px solid #e1e8ed;
+}
+
+.degen-badge.rare { background: var(--primary-orange); color: var(--primary-white); }
+.degen-badge.legendary { background: var(--dark-orange); color: var(--primary-white); }
+.degen-badge.diamond { background: var(--light-orange); color: var(--text-dark); }
+.degen-badge.moon { background: var(--text-medium); color: var(--primary-white); }
+
+/* Clean NFT Cards */
+.nft-card-degen {
+  background: var(--primary-white);
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nft-card-degen:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.15);
+  border-color: var(--primary-orange);
+}
+
+.nft-image-degen {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.nft-card-degen:hover .nft-image-degen {
+  transform: scale(1.02);
+}
+
+.nft-info-degen {
+  padding: 16px;
+  background: var(--primary-white);
+}
+
+.nft-title-degen {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.nft-rarity-degen {
+  font-size: 12px;
+  color: var(--primary-orange);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Clean Section Headers */
+.section-header-degen h2 {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.section-header-degen h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--orange-gradient);
+  border-radius: 2px;
+}
+
+.section-header-degen p {
+  color: var(--text-medium);
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Clean Trading Cards */
+.exchange-card-degen {
+  background: var(--primary-white);
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-card-degen:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.15);
+  border-color: var(--primary-orange);
+}
+
+/* Clean Tooltips */
+.degen-tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.degen-tooltip::after {
+  content: attr(data-meme);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text-dark);
+  color: var(--primary-white);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.degen-tooltip:hover::after {
+  opacity: 1;
+}
+
+/* Minimal Background */
+body {
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .degen-title {
+    font-size: clamp(20px, 6vw, 36px);
+  }
+  
+  .nft-card-degen:hover {
+    transform: translateY(-2px);
+  }
+  
+  .exchange-card-degen:hover {
+    transform: translateY(-2px);
+  }
+  
+  .section-header-degen h2 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Loading Animation */
+.degen-loading {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--primary-orange);
+  animation: subtle-float 2s infinite;
+}

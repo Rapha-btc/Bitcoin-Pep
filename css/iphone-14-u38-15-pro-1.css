@@ -1,0 +1,112 @@
+/* screen - iphone-14-u38-15-pro-1 */
+
+.iphone-14-u38-15-pro-1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4304px;
+  overflow: hidden;
+  padding: 13px 0;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .vector {
+  height: 45px;
+  margin-left: 1.82px;
+  margin-top: 29px;
+  width: 45px;
+}
+
+.iphone-14-u38-15-pro-1 .group-24 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 35px;
+  min-width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .overlap-group {
+  height: 184px;
+  position: relative;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .group-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 77px;
+  left: 0;
+  min-height: 184px;
+  position: absolute;
+  top: 0;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .title {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  letter-spacing: -0.80px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 60px;
+  text-align: center;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .place-a-bid:hover {
+  transform: scale(1.1);
+}
+
+.iphone-14-u38-15-pro-1 .welcome-autists-bit {
+  left: 58px;
+  letter-spacing: -0.20px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 73px;
+  width: 277px;
+}
+
+.iphone-14-u38-15-pro-1 .span1 {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxs);
+  font-weight: 600;
+  letter-spacing: -0.02px;
+}
+
+.iphone-14-u38-15-pro-1 .dalle-2024-04-16-195 {
+  height: 391px;
+  margin-right: 7.0px;
+  margin-top: 85px;
+  object-fit: cover;
+  width: 400px;
+}
+
+.iphone-14-u38-15-pro-1 .infographic-bitcoin-pepe-1-1 {
+  height: 962px;
+  margin-top: 53px;
+  object-fit: cover;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .portfolio {
+  height: 450px;
+  margin-top: 26px;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .portfolio-1 {
+  height: 502px;
+  margin-top: 33px;
+  width: 393px;
+}
+
+.iphone-14-u38-15-pro-1 .twitter {
+  height: 1200px;
+  margin-top: 49px;
+  width: 393px;
+}

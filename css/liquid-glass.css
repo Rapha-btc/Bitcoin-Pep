@@ -1,0 +1,688 @@
+/* Liquid Glass Design System - Inspired by Jony Ive's Apple Aesthetic */
+/* Ultra-modern glassmorphism with fluid animations and premium feel */
+
+:root {
+  /* Glass System Colors */
+  --glass-white: rgba(255, 255, 255, 0.7);
+  --glass-white-strong: rgba(255, 255, 255, 0.8);
+  --glass-white-ultra: rgba(255, 255, 255, 0.9);
+  --glass-black: rgba(0, 0, 0, 0.08);
+  --glass-black-strong: rgba(0, 0, 0, 0.12);
+  
+  /* Bitcoin Orange Glass */
+  --glass-orange: rgba(251, 125, 33, 0.08);
+  --glass-orange-strong: rgba(251, 125, 33, 0.15);
+  --glass-orange-vibrant: rgba(251, 125, 33, 0.25);
+  
+  /* System Surfaces */
+  --surface-primary: rgba(255, 255, 255, 0.9);
+  --surface-secondary: rgba(255, 255, 255, 0.7);
+  --surface-elevated: rgba(255, 255, 255, 0.95);
+  
+  /* Typography */
+  --text-primary: #2c3e50;
+  --text-secondary: #495057;
+  --text-tertiary: #6c757d;
+  --text-accent: #ff6600;
+  
+  /* Shadows & Depth */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.04);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  
+  /* Blur Levels */
+  --blur-sm: blur(4px);
+  --blur-md: blur(8px);
+  --blur-lg: blur(16px);
+  --blur-xl: blur(24px);
+  --blur-ultra: blur(40px);
+  
+  /* Border Radius System */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-ultra: 48px;
+  --radius-full: 9999px;
+  
+  /* Animation Timing */
+  --duration-fast: 0.15s;
+  --duration-normal: 0.3s;
+  --duration-slow: 0.45s;
+  --duration-ultra: 0.6s;
+  
+  /* Easing Functions - Apple-style */
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-spring: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, 
+    #ffffff 0%, 
+    #fafafa 25%, 
+    #f8f9fa 50%, 
+    #fafafa 75%, 
+    #ffffff 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-feature-settings: "kern" 1, "liga" 1;
+  position: relative;
+}
+
+/* Background Gradient Animation */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(251, 125, 33, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(251, 125, 33, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+  animation: backgroundShift 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
+  50% { opacity: 0.8; transform: scale(1.05) rotate(1deg); }
+}
+
+/* Glass Container System */
+.glass-container {
+  background: var(--surface-primary);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+  border: 1px solid var(--glass-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-white-strong), transparent);
+  opacity: 0.8;
+}
+
+.glass-elevated {
+  background: var(--surface-elevated);
+  backdrop-filter: var(--blur-xl);
+  -webkit-backdrop-filter: var(--blur-xl);
+  border: 1px solid var(--glass-white-strong);
+  box-shadow: var(--shadow-xl);
+}
+
+.glass-subtle {
+  background: var(--surface-secondary);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  border: 1px solid var(--glass-white);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Navigation - Ultra Premium Glass */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.nav-glass {
+  background: var(--surface-elevated);
+  backdrop-filter: var(--blur-ultra);
+  -webkit-backdrop-filter: var(--blur-ultra);
+  border-bottom: 1px solid var(--glass-white);
+  padding: 16px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(180deg, 
+    var(--glass-white-ultra) 0%, 
+    var(--glass-white) 50%, 
+    transparent 100%);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all var(--duration-normal) var(--ease-out-quart);
+}
+
+.nav-logo:hover {
+  color: var(--text-accent);
+  transform: translateY(-1px);
+}
+
+.nav-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-normal) var(--ease-out-quart);
+}
+
+.nav-logo:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(251, 125, 33, 0.3);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all var(--duration-normal) var(--ease-out-quart);
+  position: relative;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--glass-orange);
+  border-radius: var(--radius-full);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all var(--duration-normal) var(--ease-out-expo);
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+.nav-links a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Main Content Container */
+.current-site {
+  padding-top: 100px;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Hero Section - Liquid Glass */
+.hero-section {
+  padding: 80px 0 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-glass {
+  background: var(--surface-primary);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+  border: 1px solid var(--glass-white);
+  border-radius: var(--radius-xl);
+  padding: 60px;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.hero-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    var(--glass-orange) 0%, 
+    transparent 30%, 
+    transparent 70%, 
+    var(--glass-white) 100%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: clamp(48px, 6vw, 72px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  transition: all var(--duration-slow) var(--ease-out-quart);
+}
+
+.hero-image:hover img {
+  transform: scale(1.02) rotateY(5deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Buttons - Liquid Glass */
+.cta-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn-glass {
+  background: var(--glass-orange-strong);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  border: 1px solid var(--glass-orange-vibrant);
+  color: var(--text-primary);
+  padding: 16px 32px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all var(--duration-normal) var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--glass-white-strong), transparent);
+  transition: left var(--duration-slow) var(--ease-out-quart);
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(251, 125, 33, 0.3);
+  border-color: var(--text-accent);
+}
+
+.btn-glass:hover::before {
+  left: 100%;
+}
+
+.btn-glass-secondary {
+  background: var(--surface-primary);
+  border: 1px solid var(--glass-white);
+  color: var(--text-secondary);
+}
+
+.btn-glass-secondary:hover {
+  color: var(--text-primary);
+  border-color: var(--glass-white-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Section Containers */
+.section-glass {
+  margin: 80px 0;
+  position: relative;
+}
+
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--text-primary), var(--text-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Card System - Ultra Premium Glass */
+.card-glass {
+  background: var(--surface-primary);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+  border: 1px solid var(--glass-white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--duration-normal) var(--ease-out-quart);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--glass-white-strong), transparent);
+}
+
+.card-glass:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--glass-white-strong);
+}
+
+.card-glass:hover::before {
+  background: linear-gradient(90deg, transparent, var(--glass-orange-strong), transparent);
+}
+
+/* Grid Systems */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* NFT Gallery - Premium Glass Cards */
+.nft-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.nft-card-glass {
+  background: var(--surface-elevated);
+  backdrop-filter: var(--blur-xl);
+  -webkit-backdrop-filter: var(--blur-xl);
+  border: 1px solid var(--glass-white-strong);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  box-shadow: var(--shadow-xl);
+  transition: all var(--duration-slow) var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nft-card-glass:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  border-color: var(--glass-orange-strong);
+}
+
+.nft-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  transition: all var(--duration-slow) var(--ease-out-quart);
+}
+
+.nft-card-glass:hover .nft-image {
+  transform: scale(1.05);
+}
+
+.nft-info {
+  padding: 24px;
+  background: var(--surface-primary);
+  backdrop-filter: var(--blur-lg);
+  -webkit-backdrop-filter: var(--blur-lg);
+}
+
+.nft-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.nft-price {
+  font-size: 16px;
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* Loading States */
+.loading-shimmer {
+  background: linear-gradient(90deg, 
+    var(--glass-white) 25%, 
+    var(--glass-white-strong) 50%, 
+    var(--glass-white) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-glass {
+    padding: 40px 24px;
+    margin: 0 16px 24px;
+  }
+  
+  .section-container {
+    padding: 0 16px;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .nft-gallery {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn-glass {
+    justify-content: center;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  :root {
+    --glass-white: rgba(255, 255, 255, 0.2);
+    --glass-white-strong: rgba(255, 255, 255, 0.3);
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+  }
+}
+
+/* Dark mode optimization (already dark but for system consistency) */
+@media (prefers-color-scheme: dark) {
+  /* Already optimized for dark mode */
+}
+
+/* Print styles */
+@media print {
+  .glass-container,
+  .card-glass,
+  .nft-card-glass {
+    background: white !important;
+    backdrop-filter: none !important;
+    border: 1px solid #ccc !important;
+    box-shadow: none !important;
+  }
+  
+  .main-nav {
+    display: none;
+  }
+}

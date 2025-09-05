@@ -1,0 +1,396 @@
+/* screen - frame-12 */
+
+.frame-12 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4303.83px;
+  overflow: hidden;
+  width: 1580px;
+}
+
+.frame-12 .vector {
+  align-self: flex-start;
+  height: 75px;
+  margin-left: 71px;
+  margin-top: 43px;
+  width: 75px;
+}
+
+.frame-12 .group-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 138px;
+  margin-left: 104.0px;
+  margin-top: 119px;
+  min-width: 1024px;
+}
+
+.frame-12 .group-30-1 {
+  height: 350px;
+  object-fit: cover;
+  width: 337px;
+}
+
+.frame-12 .overlap-group1 {
+  height: 246px;
+  margin-top: 21px;
+  position: relative;
+  width: 549px;
+}
+
+.frame-12 .overlap-group {
+  height: 246px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 443px;
+}
+
+.frame-12 .info {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 115px;
+  left: 0;
+  min-height: 246px;
+  position: absolute;
+  top: 0;
+  width: 443px;
+}
+
+.frame-12 .title {
+  letter-spacing: -1.12px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 84px;
+}
+
+.frame-12 .place-a-bid:hover {
+  transform: scale(1.1);
+}
+
+.frame-12 .place-a-bid-1 {
+  align-items: center;
+  background-color: var(--forest-green);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 199px;
+  padding: 14px 24px 13px;
+  position: absolute;
+  top: 198px;
+  transition: all 0.2s ease;
+  width: 181px;
+}
+
+.frame-12 .place-a-bid-1:hover {
+  transform: scale(1.1);
+}
+
+.frame-12 .welcome-autists-bit {
+  left: 0;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+  width: 549px;
+}
+
+.frame-12 .group-container-1 {
+  height: 1100px;
+  margin-left: 0.75px;
+  margin-top: 102px;
+  position: relative;
+  width: 1701px;
+}
+
+.frame-12 .overlap-group2 {
+  align-items: flex-start;
+  background-image: url(../img/d919a2b7466c43a0b67840ca0d61b00f-2.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  left: 60px;
+  min-height: 1100px;
+  padding: 66px 363px;
+  position: absolute;
+  top: 0;
+  width: 1580px;
+}
+
+.frame-12 .group-container-2 {
+  align-items: flex-start;
+  display: flex;
+  gap: 26px;
+  margin-left: 51px;
+  min-width: 632px;
+}
+
+.frame-12 .group-container-3 {
+  height: 102px;
+  position: relative;
+  width: 452px;
+}
+
+.frame-12 .group-19 {
+  align-items: flex-start;
+  display: flex;
+  gap: 95px;
+  height: 102px;
+  left: 0;
+  min-width: 452px;
+  position: absolute;
+  top: 0;
+}
+
+.frame-12 .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 102px;
+  width: 185px;
+}
+
+.frame-12 .address {
+  letter-spacing: -0.72px;
+  line-height: normal;
+  min-height: 66px;
+  width: 185px;
+}
+
+.frame-12 .total-supply {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-left: 1px;
+  min-height: 26px;
+  width: 102px;
+}
+
+.frame-12 .group-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 102px;
+  width: 172px;
+}
+
+.frame-12 .pepe-sip-010 {
+  letter-spacing: -0.72px;
+  line-height: normal;
+  min-height: 66px;
+  width: 168px;
+}
+
+.frame-12 .span1 {
+  letter-spacing: -0.02px;
+}
+
+.frame-12 .ticker {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-left: 0.02px;
+  min-height: 26px;
+  width: 49px;
+}
+
+.frame-12 .group-35 {
+  background-color: var(--white);
+  background-image: url(../img/2024-03-18-09-07-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 22.5px;
+  height: 45px;
+  left: 223px;
+  position: absolute;
+  top: 4px;
+  width: 45px;
+}
+
+.frame-12 .group-11 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  min-height: 97px;
+  width: 154px;
+}
+
+.frame-12 .user {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 40px;
+  box-shadow: 8px 8px 16px #eaf1f6;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  padding: 8px 16px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.frame-12 .user:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.frame-12 .telegram {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-left: 9.84px;
+  min-height: 26px;
+  width: 80px;
+}
+
+.frame-12 .group-23 {
+  align-items: flex-end;
+  align-self: flex-end;
+  background-color: var(--white);
+  border-radius: 30px;
+  display: flex;
+  gap: 6px;
+  height: 200px;
+  margin-top: 482px;
+  min-width: 758px;
+  padding: 28px 143px;
+}
+
+.frame-12 .flex-col-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-height: 143px;
+  width: 228px;
+}
+
+.frame-12 .group-4 {
+  background-image: url(../img/826402e1-5766-4f9d-b4bd-838ff748ee00-1@2x.png);
+  background-size: 100% 100%;
+  height: 72px;
+  width: 228px;
+}
+
+.frame-12 .ledger-logo-png-transparent-1 {
+  height: 45px;
+  margin-left: 22.83px;
+  object-fit: cover;
+  width: 167px;
+}
+
+.frame-12 .logo-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin-bottom: 4.77px;
+  min-height: 120px;
+  width: 205px;
+}
+
+.frame-12 .x605b5ebb5b223175e143 {
+  align-self: flex-end;
+  height: 35px;
+  object-fit: cover;
+  width: 185px;
+}
+
+.frame-12 .bitcoin_logo_white_background-1 {
+  height: 43px;
+  object-fit: cover;
+  width: 195px;
+}
+
+.frame-12 .group-20 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  gap: 26px;
+  margin-left: 59.85px;
+  margin-top: 48px;
+  min-width: 432px;
+}
+
+.frame-12 .place-a-bid-2 {
+  align-items: center;
+  background-color: var(--blaze-orange);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 59px;
+  justify-content: center;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 203px;
+}
+
+.frame-12 .place-a-bid-2:hover {
+  transform: scale(1.1);
+}
+
+.frame-12 .place-a-bid-3 {
+  align-items: center;
+  background-color: var(--forest-green-2);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 59px;
+  justify-content: center;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 203px;
+}
+
+.frame-12 .place-a-bid-3:hover {
+  transform: scale(1.1);
+}
+
+.frame-12 .group-24 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  left: 1221px;
+  min-height: 97px;
+  position: absolute;
+  top: 71px;
+  width: 170px;
+}
+
+.frame-12 .discord {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-left: 9.84px;
+  min-height: 26px;
+  width: 80px;
+}
+
+.frame-12 .portfolio {
+  height: 659px;
+  margin-right: 1.0px;
+  margin-top: 81px;
+  width: 1579px;
+}
+
+.frame-12 .portfolio-1 {
+  height: 502px;
+  margin-left: 10.0px;
+  margin-top: 81px;
+  width: 1220px;
+}
+
+.frame-12 .twitter {
+  height: 1177px;
+  margin-left: 10.0px;
+  margin-top: 102px;
+  width: 1200px;
+}

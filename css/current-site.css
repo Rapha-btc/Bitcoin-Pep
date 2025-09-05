@@ -1,0 +1,367 @@
+/* screen - current-site */
+
+.current-site {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 6788px;
+  overflow: hidden;
+  padding: 43px 0;
+  width: 1320px;
+}
+
+.current-site .vector {
+  height: 75px;
+  width: 75px;
+}
+
+.current-site .flex-col {
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 125.0px;
+  min-height: 275px;
+  width: 554px;
+}
+
+.current-site .overlap-group4 {
+  height: 246px;
+  margin-right: 5.0px;
+  position: relative;
+  width: 549px;
+}
+
+.current-site .overlap-group {
+  height: 246px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 549px;
+}
+
+.current-site .group-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 115px;
+  left: 0;
+  min-height: 246px;
+  position: absolute;
+  top: 0;
+  width: 443px;
+}
+
+.current-site .title {
+  letter-spacing: -1.12px;
+  line-height: normal;
+  margin-top: -1px;
+  min-height: 84px;
+}
+
+.current-site .place-a-bid:hover {
+  transform: scale(1.1);
+}
+
+.current-site .place-a-bid-1 {
+  align-items: center;
+  background-color: #f2110f;
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0.95;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 181px;
+}
+
+.current-site .place-a-bid-1:hover {
+  transform: scale(1.1);
+}
+
+.current-site .overlap-group3 {
+  height: 1556px;
+  margin-left: -83px;
+  margin-top: 53px;
+  position: relative;
+  width: 1636px;
+}
+
+.current-site .dalle-2024-04-16-195 {
+  height: 1556px;
+  left: 56px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1580px;
+}
+
+.current-site .group-container {
+  height: 1148px;
+  position: relative;
+  width: 1491px;
+}
+
+.current-site .group-23 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 657px;
+  left: 0;
+  min-height: 1148px;
+  position: absolute;
+  top: 0;
+  width: 1491px;
+}
+
+.current-site .group-container-1 {
+  background-color: var(--white);
+  border-radius: 30px;
+  height: 292px;
+  margin-left: 0.58px;
+  position: relative;
+  width: 1084px;
+}
+
+.current-site .group-4 {
+  background-image: url(../img/826402e1-5766-4f9d-b4bd-838ff748ee00-1-1@2x.png);
+  background-size: 100% 100%;
+  height: 72px;
+  left: 60px;
+  position: absolute;
+  top: 74px;
+  width: 228px;
+}
+
+.current-site .x605b5ebb5b223175e143 {
+  height: 61px;
+  margin-bottom: 5.02px;
+  width: 287px;
+}
+
+.current-site .flex-col-1 {
+  align-self: flex-start;
+  gap: 33px;
+  margin-left: 15px;
+  min-height: 186px;
+  width: 354px;
+}
+
+.current-site .bitcoin_logo_white_background-1 {
+  height: 63px;
+  width: 292px;
+}
+
+.current-site .ledger-logo-png-transparent-1 {
+  height: 60px;
+  object-fit: cover;
+  width: 217px;
+}
+
+.current-site .group-container-2 {
+  height: 143px;
+  left: 106px;
+  position: absolute;
+  top: 29px;
+  width: 644px;
+}
+
+.current-site .group-19 {
+  align-items: flex-start;
+  display: flex;
+  gap: 136px;
+  height: 143px;
+  left: 0;
+  min-width: 644px;
+  position: absolute;
+  top: 0;
+}
+
+.current-site .address {
+  left: 0;
+  letter-spacing: -0.72px;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 264px;
+}
+
+.current-site .group-10 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 0;
+  min-height: 143px;
+  width: 244px;
+}
+
+.current-site .pepe-sip-010 {
+  letter-spacing: -0.72px;
+  line-height: normal;
+  min-height: 93px;
+  width: 240px;
+}
+
+.current-site .span1 {
+  letter-spacing: -0.02px;
+}
+
+.current-site .ticker {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-left: 0.03px;
+  min-height: 36px;
+  width: 70px;
+}
+
+.current-site .group-35 {
+  background-color: var(--white);
+  background-image: url(../img/2024-03-18-09-07-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 32.16px/31.56px;
+  height: 63px;
+  left: 319px;
+  position: absolute;
+  top: 6px;
+  width: 64px;
+}
+
+.current-site .group-11 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  left: 789px;
+  min-height: 136px;
+  position: absolute;
+  top: 36px;
+  width: 154px;
+}
+
+.current-site .user {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 40px;
+  box-shadow: 8px 8px 16px #eaf1f6;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  margin-right: 2.0px;
+  padding: 8px 16px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.current-site .user:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.current-site .telegram {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-right: 11.53px;
+  min-height: 36px;
+  width: 114px;
+}
+
+.current-site .group-24 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  left: 1174px;
+  min-height: 136px;
+  position: absolute;
+  top: 36px;
+  width: 170px;
+}
+
+.current-site .discord {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-right: 27.54px;
+  min-height: 36px;
+  width: 114px;
+}
+
+.current-site .group-20 {
+  align-items: flex-start;
+  display: flex;
+  gap: 37px;
+  margin-left: 0.35px;
+  min-width: 617px;
+}
+
+.current-site .place-a-bid-2 {
+  align-items: center;
+  background-color: var(--blaze-orange);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 83px;
+  justify-content: center;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 290px;
+}
+
+.current-site .place-a-bid-2:hover {
+  transform: scale(1.1);
+}
+
+.current-site .place-a-bid-3 {
+  align-items: center;
+  background-color: var(--forest-green-2);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  height: 83px;
+  justify-content: center;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 290px;
+}
+
+.current-site .place-a-bid-3:hover {
+  transform: scale(1.1);
+}
+
+.current-site .infographic-bitcoin-pepe-1-1 {
+  align-self: center;
+  height: 1383px;
+  margin-left: 7.0px;
+  margin-top: 55px;
+  object-fit: cover;
+  width: 565px;
+}
+
+.current-site .portfolio {
+  height: 650px;
+  margin-left: -26px;
+  margin-top: 124px;
+  width: 1380px;
+}
+
+.current-site .twitter {
+  align-self: center;
+  height: 1177px;
+  margin-left: 8.0px;
+  margin-top: 124px;
+  width: 1200px;
+}
+
+.current-site .portfolio-1 {
+  height: 632px;
+  margin-left: -29px;
+  margin-top: 103px;
+  width: 1380px;
+}

@@ -1,0 +1,91 @@
+:root { 
+  --black: #000000;
+  --blaze-orange: #f96a05;
+  --ecstasy: #fb7d21;
+  --forest-green: #ff6600e6;
+  --forest-green-2: #ff6600;
+  --mountain-mist: #969797;
+  --sonic-silver: #727373;
+  --white: #ffffff;
+ 
+  --font-size-l: 36px;
+  --font-size-m: 18px;
+  --font-size-s: 14px;
+  --font-size-xl: 40px;
+  --font-size-xs: 12px;
+  --font-size-xxl: 56px;
+  --font-size-xxs: 10px;
+ 
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-bold-white-14px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-normal-white-14px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-white-36px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-sonic-silver-18px {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-bold-mountain-mist-12px {
+  color: var(--mountain-mist);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.poppins-normal-sonic-silver-10px {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-sonic-silver-56px {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-semi-bold-sonic-silver-18px {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.poppins-normal-white-10px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,288 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700,600,400");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/62e19ba267033e79db19c76f.62e19ba2ba0ac2336a8d0b73.FVBzwKA.hcp.png");
+
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.overlap-group5 {
+  align-items: flex-start;
+  background-image: url(../img/vector@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  margin-left: 71px;
+  min-width: 75px;
+}
+
+.flex-row {
+  align-self: flex-end;
+  gap: 18px;
+  margin-right: 28px;
+  margin-top: 64px;
+  min-width: 1146px;
+}
+
+.bitcoin-is-king-5-1 {
+  height: 530px;
+  object-fit: cover;
+  width: 574px;
+}
+
+.place-a-bid {
+  align-items: center;
+  background-color: var(--ecstasy);
+  border-radius: 48px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0.95;
+  padding: 14px 24px 13px;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 181px;
+}
+
+.x-pepe {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.welcome-bitcoin-pe {
+  left: 0;
+  letter-spacing: -0.36px;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+  width: 549px;
+}
+
+.span {
+  letter-spacing: -0.06px;
+}
+
+.frame-7 {
+  left: 199px;
+  position: absolute;
+  top: 198px;
+}
+
+.infographic-how-to {
+  color: var(--sonic-silver);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  letter-spacing: -0.24px;
+  line-height: normal;
+  margin-left: 5.0px;
+  min-height: 18px;
+  width: 549px;
+}
+
+.group-31 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  left: 0;
+  min-height: 1293px;
+  position: absolute;
+  top: 0;
+  width: 1491px;
+}
+
+.rectangle-9 {
+  background-color: var(--primary-orange);
+  border-radius: 30px;
+  height: 199px;
+  width: 1491px;
+}
+
+.group-22 {
+  align-items: flex-end;
+  display: flex;
+  height: 191px;
+  left: 82px;
+  min-width: 922px;
+  position: absolute;
+  top: 65px;
+}
+
+.ui-uo-rvy5-qvi5-da-z {
+  align-self: flex-end;
+  cursor: pointer;
+  height: 90px;
+  object-fit: cover;
+  width: 90px;
+}
+
+.flex-col-2 {
+  gap: 41px;
+  min-height: 183px;
+  width: 266px;
+}
+
+.untitled-1 {
+  align-self: flex-end;
+  cursor: pointer;
+  height: 82px;
+  object-fit: cover;
+  width: 202px;
+}
+
+.overlap-group-1 {
+  height: 129px;
+  position: relative;
+  width: 264px;
+}
+
+.total-supply-will-decline {
+  left: 0;
+  letter-spacing: -0.28px;
+  line-height: normal;
+  position: absolute;
+  top: 93px;
+  width: 146px;
+}
+
+.span-1 {
+  letter-spacing: -0.26px;
+}
+
+.x1024px-telegram_logo-1 {
+  height: 32px;
+  object-fit: cover;
+  position: relative;
+  width: 32px;
+}
+
+.pepe-coin-stx {
+  letter-spacing: -0.24px;
+  line-height: normal;
+  position: relative;
+  text-align: right;
+  width: fit-content;
+}
+
+.x5b24e49fd89287ff1eb5 {
+  height: 32px;
+  object-fit: cover;
+  position: relative;
+  width: 32px;
+}
+
+.contract {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.transactions {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.alexlab-1 {
+  cursor: pointer;
+  height: 70px;
+  left: 551px;
+  object-fit: cover;
+  position: absolute;
+  top: 930px;
+  width: 70px;
+}
+
+.velar-logo-1 {
+  cursor: pointer;
+  height: 87px;
+  left: 700px;
+  object-fit: cover;
+  position: absolute;
+  top: 921px;
+  width: 70px;
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+}
+
+.flex-col-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  min-width: 181px;
+}
+
+.bitcoin-is-king-5-2 {
+  height: 200px;
+  margin-left: 1.42px;
+  margin-top: 34px;
+  object-fit: cover;
+  width: 190px;
+}
+
+.buy-pepe {
+  letter-spacing: -0.28px;
+  line-height: normal;
+  margin-top: -1.00px;
+  position: relative;
+  width: fit-content;
+}
+
+.span0 {
+  letter-spacing: -0.02px;
+}
+
+.frame-6 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  min-width: 181px;
+}
