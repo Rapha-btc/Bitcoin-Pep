@@ -12,6 +12,6 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.0"
   }
 }
